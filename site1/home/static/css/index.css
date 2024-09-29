@@ -102,7 +102,24 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+#fileInput {
+  margin-left: 50px;
+  padding: 10px; /* Khoảng cách bên trong */
+  background-color: rgba(255, 255, 255, 0.2); /* Màu nền */
+  border: none; /* Xóa đường viền mặc định */
+  border-radius: 5px; /* Bo tròn góc */
+  color: black; /* Màu chữ */
+  font-family: "Raleway", sans-serif; /* Font chữ */
+  font-size: 14px; /* Kích thước chữ */
+  cursor: pointer; /* Thay đổi con trỏ */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+  width: 120px; /* Hoặc bạn có thể đặt một giá trị cụ thể */
+}
 
+/* Hiệu ứng hover */
+#fileInput button:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Đổi màu nền khi hover */
+}
 .controls button:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
