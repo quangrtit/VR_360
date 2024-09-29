@@ -6,26 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>360 Degree Image Viewer</title>
-    <link rel="stylesheet" href="static/360-Degree-Image-Viewer/style.css" />
+    <link rel="icon" href="">
+    {% comment %} <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon"> {% endcomment %}
+    <link rel="stylesheet" href="static/css/home.css"/>
   </head>
   <body>
-    <div class="main-container">
-      <h1>Hi, Welcome</h1>
-      <div class="image-container"></div>
-      <div class="controls">
-        <button id="zoomIn">Phóng to</button>
-        <button id="zoomOut">Thu nhỏ</button>
-        <button id="fullscreen">Toàn màn hình</button>
-      </div>
+    <header class="header-main">
+      <img src="static/images/image/logo.jpg" alt="ANH QUẢNG" class="logo" />
+      <div class="nav-links">
+        <a href="#home" class="nav-item">Trang chủ</a>
+        <a href="#about" class="nav-item">Giới thiệu</a>
+        <a href="#services" class="nav-item">Dịch vụ</a>
+        <a href="#contact" class="nav-item">Liên hệ</a>
     </div>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"
-      integrity="sha512-uWKImujbh9CwNa8Eey5s8vlHDB4o1HhrVszkympkm5ciYTnUEQv3t4QHU02CUqPtdKTg62FsHo12x63q6u0wmg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="static/360-Degree-Image-Viewer/js/panolens.min.js"></script>
-    <script src="static/360-Degree-Image-Viewer/main.js"></script>
+      <div class="login-form">
+          <a href="{% url 'index' %}" class="login-button">Đăng nhập</a>
+      </div>
+  </header>
+  <div class="main-background">
+    <img src="static/images/image/background1.gif" alt="" class="image-background"/>
+  </div>
   </body>
 </html>

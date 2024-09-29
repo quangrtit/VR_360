@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    height: 120vh;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+.background .main-login-container {
+    display: flex;
+    height: 90vh;
+    width: 80vw;
+    background: rgb(227, 242, 246); 
+    /* margin: 25vh, 10vw, 25vh, 10vw;  */
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.main-login-container .main-login-container1
+{
+    display: flex;
+    height: 82vh;
+    width: 76vw;
+    background: rgb(227, 242, 246);
+    align-items: center;
+    justify-content: right;
+}
+.main-login-container1 .image-login-background {
+    /* background-color: rgb(255, 255, 255); */
+    height: 100%;
+    width: 50%;
+
+}
+.main-login-container1 .form-login {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các ô nhập liệu */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Tăng khoảng cách giữa các ô nhập liệu */
+    width: 100%; /* Đảm bảo ô chiếm toàn bộ chiều rộng */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Đảm bảo ô nhập liệu chiếm toàn bộ chiều rộng */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}

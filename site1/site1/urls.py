@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path
 from home import views as home
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', home.get_home)
+    path('admin/', admin.site.urls), # trang admin
+    path('', home.get_home, name='home'), # trang home
+    path('login/', home.get_login, name='login'),  # Trang login
+    path('index/', home.get_index, name='index'), # trang xem vr 360
 ]

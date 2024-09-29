@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+  }
+  
+  
+.header-main {
+  background-color: white;
+  height: 10vh; /* Chiều cao của header */
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Căn giữa theo chiều ngang */
+  padding: 0 20px; /* Padding bên trái và bên phải */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.header-main .logo {
+  width: 10vh; 
+  height: auto; 
+  margin-left: 100px;
+}
+
+.nav-links {
+  display: flex; /* Sử dụng Flexbox cho danh sách liên kết */
+}
+
+.nav-item {
+  margin: 0 80px; /* Khoảng cách giữa các nút */
+  text-decoration: none; /* Xóa gạch chân */
+  color: black; /* Màu chữ */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu */
+  font-size: 20px
+}
+
+.nav-item:hover {
+  color: #0056b3; /* Đổi màu chữ khi hover */
+}
+
+.header-main .login-form {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Chiều cao toàn trang hoặc bạn có thể điều chỉnh */
+  margin-right: 100px;
+}
+
+.login-form .login-button {
+  background-color: #007BFF; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  padding: 15px 30px; /* Khoảng cách bên trong */
+  border: none; /* Xóa đường viền */
+  border-radius: 25px; /* Bo tròn góc */
+  text-decoration: none; /* Xóa gạch chân */
+  font-size: 16px; /* Kích thước chữ */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Đổi màu nền khi hover */
+}
+
+.main-container {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+.main-container .frame-container {
+  height: 80%;
+  position: relative;
+  width: 60%;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+.frame-container .image-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles for new control buttons */
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Ensure controls are visible in fullscreen mode */
+.main-container:-webkit-full-screen .controls {
+  bottom: 40px;
+}
+
+.main-container:-moz-full-screen .controls {
+  bottom: 40px;
+}
+
+.main-container:-ms-fullscreen .controls {
+  bottom: 40px;
+}
+
+.main-container:fullscreen .controls {
+  bottom: 40px;
+}

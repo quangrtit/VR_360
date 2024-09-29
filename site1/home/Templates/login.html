@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}"/>
+</head>
+<body>
+    <div class="background">
+        <div class="main-login-container">
+            <div class="main-login-container1">
+                <div class="image-login-background">
+                    <div class="logo-name" style="display: flex;justify-content: center;"/> 
+                        <img src="{% static 'images/image/logo.jpg' %}" alt="ANH QUẢNG" style="width: 20vw; height: 10vw;" />
+                        <!--?????????????????????????????????????????????????????-->
+                    </div>
+                </div>
+                <div class="form-login">
+                    <!-- Form Đăng Nhập -->
+                    <form id="login-form" class="form">
+                        <h2>Đăng Nhập</h2>
+                        <div class="form-group">
+                            <label for="login-username">Tên Đăng Nhập</label>
+                            <input type="text" id="login-username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Mật Khẩu</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit">Đăng Nhập
+                            <a href="{% url 'home' %}" class="login-button"></a>
+                        </button>
+                        <p class="switch-form">Chưa có tài khoản? <a href="#" id="show-register">Đăng Ký</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
